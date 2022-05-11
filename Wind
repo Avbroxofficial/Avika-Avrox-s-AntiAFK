@@ -17,6 +17,7 @@ _b.TextColor3=Color3.new(0,1,1)_b.TextSize=20;ab.Parent=da
 ab.BackgroundColor3=Color3.new(0.176471,0.176471,0.176471)ab.Position=UDim2.new(0,0,0.158377,0)
 ab.Size=UDim2.new(0,370,0,44)ab.Font=Enum.Font.ArialBold;ab.Text="Status: Active"
 ab.TextColor3=Color3.new(0,1,1)ab.TextSize=20;local bb=game:service'VirtualUser'
+print("successfully createt gui and loading now...)
 
 -- Anti AFK
 repeat wait() until game:IsLoaded() 
