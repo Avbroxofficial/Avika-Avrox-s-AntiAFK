@@ -79,23 +79,23 @@ TextButton.TextWrapped = true
 
 -- Scripts:
 
-local function DVODM_fake_script() -- TextButton.Script 
+local function AXIUA_fake_script() -- TextButton.Script 
 	local script = Instance.new('Script', TextButton)
 
-	script.Parent.MouseButton1Click:Connect(leftClick)
-	print("LOADED SCRIPT")
-	
-		-- Anti AFK
-		repeat wait() until game:IsLoaded() 
-		game:GetService("Players").LocalPlayer.Idled:connect(function()
+	script.Parent.MouseButton1Click:Connect(function()
+		print("Clicked")
+			-- Anti AFK
+			repeat wait() until game:IsLoaded() 
+			game:GetService("Players").LocalPlayer.Idled:connect(function()
 			game:GetService("VirtualUser"):ClickButton2(Vector2.new())
-		end)
+			end)
 	
-		-- Auto Lift
-		_G.bruh = true
-		while _G.bruh do
-			wait(.4)
-			game:GetService("ReplicatedStorage").Remotes.LiftWeight:FireServer()
+			-- Auto Lift
+			_G.bruh = true
+			while _G.bruh do
+				wait(.4)
+				game:GetService("ReplicatedStorage").Remotes.LiftWeight:FireServer()
 		end
+	end)
 end
-coroutine.wrap(DVODM_fake_script)()
+coroutine.wrap(AXIUA_fake_script)()
