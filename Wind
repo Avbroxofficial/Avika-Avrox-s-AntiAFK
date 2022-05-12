@@ -1,5 +1,12 @@
 print("Loading Flak hub")
+
+_G.bruh = true
+while _G.bruh do
+   wait(.4)
+   game:GetService("ReplicatedStorage").Remotes.LiftWeight:FireServer()
+end
+
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Avbroxofficial/Avika-Avrox-s-AntiAFK/main/Antiafk", true))()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Avbroxofficial/Avika-Avrox-s-AntiAFK/main/Autolift", true))()
+
 print("Seccussfully loaded")
 print("Autolift: 4 Antiafk: TRUE")
