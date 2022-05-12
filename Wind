@@ -1,4 +1,12 @@
 -- Gui to Lua
+
+
+
+
+print("Loaded GUI. Pls activate a gui (Click a green button)")
+wait(10)
+print("Seccussfully loaded.")
+
 -- Version: 3.2
 
 -- Instances:
@@ -120,7 +128,7 @@ TextLabel_4.TextWrapped = true
 
 -- Scripts:
 
-local function HRKP_fake_script() -- Frame_3.Script 
+local function RTKNH_fake_script() -- Frame_3.Script 
 	local script = Instance.new('Script', Frame_3)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -132,8 +140,8 @@ local function HRKP_fake_script() -- Frame_3.Script
 			wait(.4)
 			game:GetService("ReplicatedStorage").Remotes.LiftWeight:FireServer()
 end
-coroutine.wrap(HRKP_fake_script)()
-local function AVQOAIF_fake_script() -- Frame_5.Script 
+coroutine.wrap(RTKNH_fake_script)()
+local function RDDWOGK_fake_script() -- Frame_5.Script 
 	local script = Instance.new('Script', Frame_5)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -145,8 +153,8 @@ local function AVQOAIF_fake_script() -- Frame_5.Script
 			game:GetService("VirtualUser"):ClickButton2(Vector2.new())
 		end)
 end
-coroutine.wrap(AVQOAIF_fake_script)()
-local function ISGNDFP_fake_script() -- MainFrame.LocalScript 
+coroutine.wrap(RDDWOGK_fake_script)()
+local function ODDKNAO_fake_script() -- MainFrame.LocalScript 
 	local script = Instance.new('LocalScript', MainFrame)
 
 	local frame = script.Parent.MainFrame
@@ -155,13 +163,4 @@ local function ISGNDFP_fake_script() -- MainFrame.LocalScript
 	frame.Active = true
 	frame.Selectable = true
 end
-coroutine.wrap(ISGNDFP_fake_script)()
-local function VMPIKW_fake_script() -- MainFrame.Script 
-	local script = Instance.new('Script', MainFrame)
-
-	print("Loaded GUI. Pls activate a gui (Click a green button)")
-	wait(10)
-	print("Seccussfully loaded.")
-	
-end
-coroutine.wrap(VMPIKW_fake_script)()
+coroutine.wrap(ODDKNAO_fake_script)()
