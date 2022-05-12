@@ -1,4 +1,19 @@
 print("Loading Flakhub...")
+print("Now loading Autolift")
+
+_G.bruh = true
+while _G.bruh do
+   wait(.4)
+   game:GetService("ReplicatedStorage").Remotes.LiftWeight:FireServer()
+end
+print("Now loading Anti afk")
+
+local vu = game:GetService("VirtualUser")
+game:GetService("Players").LocalPlayer.Idled:connect(function()
+   vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+   wait(1)
+   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+end)
 
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
@@ -87,21 +102,5 @@ local function ZVOXS_fake_script() -- ScreenGui.LocalScript
 	frame.Selectable = true
 end
 coroutine.wrap(ZVOXS_fake_script)()
-
-print("Now loading Autolift")
-
-_G.bruh = true
-while _G.bruh do
-   wait(.4)
-   game:GetService("ReplicatedStorage").Remotes.LiftWeight:FireServer()
-end
-print("Now loading Anti afk")
-
-local vu = game:GetService("VirtualUser")
-game:GetService("Players").LocalPlayer.Idled:connect(function()
-   vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
-   wait(1)
-   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
-end)
 
 print("Seccussfully loaded, thx for using flakhub")
