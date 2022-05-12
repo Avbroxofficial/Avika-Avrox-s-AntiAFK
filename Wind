@@ -2,160 +2,108 @@ print("Loaded GUI. Pls activate a gui (Click a green button)")
 wait(10)
 print("Seccussfully loaded.")
 
--- Version: 3.2
-
--- Instances:
-
-local MainFrame = Instance.new("Frame")
-local TextLabel = Instance.new("TextLabel")
-local UICorner = Instance.new("UICorner")
-local UICorner_2 = Instance.new("UICorner")
+local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
-local UICorner_3 = Instance.new("UICorner")
-local TextLabel_2 = Instance.new("TextLabel")
-local UICorner_4 = Instance.new("UICorner")
+local UICorner = Instance.new("UICorner")
 local Frame_2 = Instance.new("Frame")
-local UICorner_5 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
 local Frame_3 = Instance.new("Frame")
-local UICorner_6 = Instance.new("UICorner")
-local TextLabel_3 = Instance.new("TextLabel")
+local UICorner_2 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
 local Frame_4 = Instance.new("Frame")
-local UICorner_7 = Instance.new("UICorner")
-local Frame_5 = Instance.new("Frame")
-local UICorner_8 = Instance.new("UICorner")
-local TextLabel_4 = Instance.new("TextLabel")
+local UICorner_3 = Instance.new("UICorner")
+local TextLabel_3 = Instance.new("TextLabel")
 
 --Properties:
 
-MainFrame.Name = "MainFrame"
-MainFrame.Parent = game.StarterGui.ScreenGui
-MainFrame.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
-MainFrame.Position = UDim2.new(0.692252994, 0, 0.68351382, 0)
-MainFrame.Selectable = true
-MainFrame.Size = UDim2.new(0, 433, 0, 263)
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-TextLabel.Parent = MainFrame
-TextLabel.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-TextLabel.Size = UDim2.new(0, 433, 0, 26)
-TextLabel.Font = Enum.Font.SciFi
-TextLabel.Text = "Flak hub | Workout island"
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
+Frame.Position = UDim2.new(0.744847178, 0, 0.799037278, 0)
+Frame.Size = UDim2.new(0, 336, 0, 151)
+
+UICorner.Parent = Frame
+
+Frame_2.Parent = Frame
+Frame_2.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+Frame_2.Position = UDim2.new(0, 0, 0.410596013, 0)
+Frame_2.Size = UDim2.new(0, 336, 0, 27)
+
+TextLabel.Parent = Frame_2
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.107142858, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 300, 0, 27)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Anti-AFK + Autolift"
 TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.TextScaled = true
 TextLabel.TextSize = 14.000
 TextLabel.TextWrapped = true
 
-UICorner.Parent = TextLabel
+Frame_3.Parent = Frame_2
+Frame_3.BackgroundColor3 = Color3.fromRGB(0, 85, 0)
+Frame_3.Position = UDim2.new(0.0684523806, 0, 0, 0)
+Frame_3.Size = UDim2.new(0, 30, 0, 27)
 
-UICorner_2.Parent = MainFrame
-
-Frame.Parent = MainFrame
-Frame.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-Frame.Position = UDim2.new(0, 0, 0.0988593176, 0)
-Frame.Size = UDim2.new(0, 120, 0, 237)
-
-UICorner_3.Parent = Frame
+UICorner_2.Parent = Frame_3
 
 TextLabel_2.Parent = Frame
-TextLabel_2.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-TextLabel_2.BackgroundTransparency = 0.750
-TextLabel_2.Size = UDim2.new(0, 120, 0, 26)
-TextLabel_2.Font = Enum.Font.Sarpanch
-TextLabel_2.Text = "Main"
-TextLabel_2.TextColor3 = Color3.fromRGB(170, 0, 0)
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0, 0, 0.821192026, 0)
+TextLabel_2.Size = UDim2.new(0, 336, 0, 21)
+TextLabel_2.Font = Enum.Font.SciFi
+TextLabel_2.Text = "Made by Avbrox#8888"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_2.TextScaled = true
 TextLabel_2.TextSize = 14.000
-TextLabel_2.TextStrokeColor3 = Color3.fromRGB(112, 112, 112)
 TextLabel_2.TextWrapped = true
 
-UICorner_4.Parent = TextLabel_2
+Frame_4.Parent = Frame
+Frame_4.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
+Frame_4.Size = UDim2.new(0, 336, 0, 30)
 
-Frame_2.Parent = MainFrame
-Frame_2.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
-Frame_2.Position = UDim2.new(0.295612007, 0, 0.121673003, 0)
-Frame_2.Size = UDim2.new(0, 297, 0, 32)
+UICorner_3.Parent = Frame_4
 
-UICorner_5.Parent = Frame_2
-
-Frame_3.Parent = MainFrame
-Frame_3.BackgroundColor3 = Color3.fromRGB(0, 85, 0)
-Frame_3.Position = UDim2.new(0.323325634, 0, 0.144486696, 0)
-Frame_3.Size = UDim2.new(0, 20, 0, 20)
-
-UICorner_6.Parent = Frame_3
-
-TextLabel_3.Parent = Frame_3
+TextLabel_3.Parent = Frame_4
 TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_3.BackgroundTransparency = 1.000
-TextLabel_3.Position = UDim2.new(1.79999995, 0, -0.150000006, 0)
-TextLabel_3.Size = UDim2.new(0, 239, 0, 26)
+TextLabel_3.Size = UDim2.new(0, 336, 0, 30)
 TextLabel_3.Font = Enum.Font.SourceSans
-TextLabel_3.Text = "Auto lift"
+TextLabel_3.Text = "Flak hub | Wokrout island"
 TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_3.TextScaled = true
 TextLabel_3.TextSize = 14.000
 TextLabel_3.TextWrapped = true
 
-Frame_4.Parent = MainFrame
-Frame_4.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
-Frame_4.Position = UDim2.new(0.295612007, 0, 0.254752845, 0)
-Frame_4.Size = UDim2.new(0, 297, 0, 32)
-
-UICorner_7.Parent = Frame_4
-
-Frame_5.Parent = MainFrame
-Frame_5.BackgroundColor3 = Color3.fromRGB(0, 85, 0)
-Frame_5.Position = UDim2.new(0.323325634, 0, 0.277566552, 0)
-Frame_5.Size = UDim2.new(0, 20, 0, 20)
-
-UICorner_8.Parent = Frame_5
-
-TextLabel_4.Parent = Frame_5
-TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_4.BackgroundTransparency = 1.000
-TextLabel_4.Position = UDim2.new(1.79999995, 0, -0.150000006, 0)
-TextLabel_4.Size = UDim2.new(0, 239, 0, 26)
-TextLabel_4.Font = Enum.Font.SourceSans
-TextLabel_4.Text = "Anti AFK"
-TextLabel_4.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_4.TextScaled = true
-TextLabel_4.TextSize = 14.000
-TextLabel_4.TextWrapped = true
-
 -- Scripts:
 
-local function RTKNH_fake_script() -- Frame_3.Script 
-	local script = Instance.new('Script', Frame_3)
+local function ZVOXS_fake_script() -- ScreenGui.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui)
 
-	script.Parent.MouseButton1Click:Connect(function()
-		print("Clicked")
-	print("Auto lift loaded")
-		-- Auto Lift
-		_G.bruh = true
-		while _G.bruh do
-			wait(.4)
-			game:GetService("ReplicatedStorage").Remotes.LiftWeight:FireServer()
-end
-coroutine.wrap(RTKNH_fake_script)()
-local function RDDWOGK_fake_script() -- Frame_5.Script 
-	local script = Instance.new('Script', Frame_5)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		print("Clicked")
-	print("Anti AFK loaded")
-		-- Anti AFK
-		repeat wait() until game:IsLoaded() 
-		game:GetService("Players").LocalPlayer.Idled:connect(function()
-			game:GetService("VirtualUser"):ClickButton2(Vector2.new())
-		end)
-end
-coroutine.wrap(RDDWOGK_fake_script)()
-local function ODDKNAO_fake_script() -- MainFrame.LocalScript 
-	local script = Instance.new('LocalScript', MainFrame)
-
-	local frame = script.Parent.MainFrame
-	
 	frame.Draggable = true
 	frame.Active = true
 	frame.Selectable = true
 end
-coroutine.wrap(ODDKNAO_fake_script)()
+coroutine.wrap(ZVOXS_fake_script)()
+
+print("Now loading Autolift")
+
+_G.bruh = true
+while _G.bruh do
+   wait(.4)
+   game:GetService("ReplicatedStorage").Remotes.LiftWeight:FireServer()
+end
+print("Now loading Anti afk")
+
+local vu = game:GetService("VirtualUser")
+game:GetService("Players").LocalPlayer.Idled:connect(function()
+   vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+   wait(1)
+   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+end)
+
+print("Seccussfully loaded, thx for using flakhub")
