@@ -3,99 +3,165 @@
 
 -- Instances:
 
-local Main = Instance.new("ScreenGui")
-local Outline = Instance.new("Frame")
-local UICorner = Instance.new("UICorner")
-local innen = Instance.new("Frame")
-local UICorner_2 = Instance.new("UICorner")
-local Name = Instance.new("Frame")
+local MainFrame = Instance.new("Frame")
 local TextLabel = Instance.new("TextLabel")
+local UICorner = Instance.new("UICorner")
+local UICorner_2 = Instance.new("UICorner")
+local Frame = Instance.new("Frame")
 local UICorner_3 = Instance.new("UICorner")
-local Script1 = Instance.new("Frame")
+local TextLabel_2 = Instance.new("TextLabel")
 local UICorner_4 = Instance.new("UICorner")
-local TextButton = Instance.new("TextButton")
+local Frame_2 = Instance.new("Frame")
+local UICorner_5 = Instance.new("UICorner")
+local Frame_3 = Instance.new("Frame")
+local UICorner_6 = Instance.new("UICorner")
+local TextLabel_3 = Instance.new("TextLabel")
+local Frame_4 = Instance.new("Frame")
+local UICorner_7 = Instance.new("UICorner")
+local Frame_5 = Instance.new("Frame")
+local UICorner_8 = Instance.new("UICorner")
+local TextLabel_4 = Instance.new("TextLabel")
 
 --Properties:
 
-Main.Name = "Main"
-Main.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-Main.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = game.StarterGui.ScreenGui
+MainFrame.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+MainFrame.Position = UDim2.new(0.692252994, 0, 0.68351382, 0)
+MainFrame.Selectable = true
+MainFrame.Size = UDim2.new(0, 433, 0, 263)
 
-Outline.Name = "Outline"
-Outline.Parent = Main
-Outline.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-Outline.Position = UDim2.new(0.265103042, 0, 0.104693137, 0)
-Outline.Size = UDim2.new(0, 661, 0, 378)
-
-UICorner.Parent = Outline
-
-innen.Name = "innen"
-innen.Parent = Main
-innen.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
-innen.Position = UDim2.new(0.269367427, 0, 0.108303249, 0)
-innen.Size = UDim2.new(0, 648, 0, 371)
-
-UICorner_2.Parent = innen
-
-Name.Name = "Name"
-Name.Parent = Main
-Name.BackgroundColor3 = Color3.fromRGB(9, 9, 9)
-Name.BorderColor3 = Color3.fromRGB(38, 60, 76)
-Name.Position = UDim2.new(0.269367456, 0, 0.108303249, 0)
-Name.Size = UDim2.new(0, 648, 0, 21)
-
-TextLabel.Parent = Name
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.BackgroundTransparency = 1.000
-TextLabel.Size = UDim2.new(0, 648, 0, 21)
+TextLabel.Parent = MainFrame
+TextLabel.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+TextLabel.Size = UDim2.new(0, 433, 0, 26)
 TextLabel.Font = Enum.Font.SciFi
-TextLabel.Text = "Flak hub X Workout island"
-TextLabel.TextColor3 = Color3.fromRGB(255, 165, 61)
+TextLabel.Text = "Flak hub | Workout island"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.TextScaled = true
 TextLabel.TextSize = 14.000
 TextLabel.TextWrapped = true
 
-UICorner_3.Parent = Name
+UICorner.Parent = TextLabel
 
-Script1.Name = "Script 1"
-Script1.Parent = Main
-Script1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Script1.Position = UDim2.new(0.285003543, 0, 0.143200964, 0)
-Script1.Size = UDim2.new(0, 604, 0, 43)
+UICorner_2.Parent = MainFrame
 
-UICorner_4.Parent = Script1
+Frame.Parent = MainFrame
+Frame.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Frame.Position = UDim2.new(0, 0, 0.0988593176, 0)
+Frame.Size = UDim2.new(0, 120, 0, 237)
 
-TextButton.Parent = Script1
-TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton.BackgroundTransparency = 1.000
-TextButton.Position = UDim2.new(0, 0, -0.0200699214, 0)
-TextButton.Size = UDim2.new(0, 604, 0, 43)
-TextButton.Font = Enum.Font.SourceSans
-TextButton.Text = "Entire Script"
-TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton.TextScaled = true
-TextButton.TextSize = 14.000
-TextButton.TextWrapped = true
+UICorner_3.Parent = Frame
+
+TextLabel_2.Parent = Frame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+TextLabel_2.BackgroundTransparency = 0.750
+TextLabel_2.Size = UDim2.new(0, 120, 0, 26)
+TextLabel_2.Font = Enum.Font.Sarpanch
+TextLabel_2.Text = "Main"
+TextLabel_2.TextColor3 = Color3.fromRGB(170, 0, 0)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextStrokeColor3 = Color3.fromRGB(112, 112, 112)
+TextLabel_2.TextWrapped = true
+
+UICorner_4.Parent = TextLabel_2
+
+Frame_2.Parent = MainFrame
+Frame_2.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+Frame_2.Position = UDim2.new(0.295612007, 0, 0.121673003, 0)
+Frame_2.Size = UDim2.new(0, 297, 0, 32)
+
+UICorner_5.Parent = Frame_2
+
+Frame_3.Parent = MainFrame
+Frame_3.BackgroundColor3 = Color3.fromRGB(0, 85, 0)
+Frame_3.Position = UDim2.new(0.323325634, 0, 0.144486696, 0)
+Frame_3.Size = UDim2.new(0, 20, 0, 20)
+
+UICorner_6.Parent = Frame_3
+
+TextLabel_3.Parent = Frame_3
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(1.79999995, 0, -0.150000006, 0)
+TextLabel_3.Size = UDim2.new(0, 239, 0, 26)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "Auto lift"
+TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+Frame_4.Parent = MainFrame
+Frame_4.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+Frame_4.Position = UDim2.new(0.295612007, 0, 0.254752845, 0)
+Frame_4.Size = UDim2.new(0, 297, 0, 32)
+
+UICorner_7.Parent = Frame_4
+
+Frame_5.Parent = MainFrame
+Frame_5.BackgroundColor3 = Color3.fromRGB(0, 85, 0)
+Frame_5.Position = UDim2.new(0.323325634, 0, 0.277566552, 0)
+Frame_5.Size = UDim2.new(0, 20, 0, 20)
+
+UICorner_8.Parent = Frame_5
+
+TextLabel_4.Parent = Frame_5
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Position = UDim2.new(1.79999995, 0, -0.150000006, 0)
+TextLabel_4.Size = UDim2.new(0, 239, 0, 26)
+TextLabel_4.Font = Enum.Font.SourceSans
+TextLabel_4.Text = "Anti AFK"
+TextLabel_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
 
 -- Scripts:
 
-local function AXIUA_fake_script() -- TextButton.Script 
-	local script = Instance.new('Script', TextButton)
+local function HRKP_fake_script() -- Frame_3.Script 
+	local script = Instance.new('Script', Frame_3)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		print("Clicked")
-			-- Anti AFK
-			repeat wait() until game:IsLoaded() 
-			game:GetService("Players").LocalPlayer.Idled:connect(function()
-			game:GetService("VirtualUser"):ClickButton2(Vector2.new())
-			end)
-	
-			-- Auto Lift
-			_G.bruh = true
-			while _G.bruh do
-				wait(.4)
-				game:GetService("ReplicatedStorage").Remotes.LiftWeight:FireServer()
-		end
-	end)
+	print("Auto lift loaded")
+		-- Auto Lift
+		_G.bruh = true
+		while _G.bruh do
+			wait(.4)
+			game:GetService("ReplicatedStorage").Remotes.LiftWeight:FireServer()
 end
-coroutine.wrap(AXIUA_fake_script)()
+coroutine.wrap(HRKP_fake_script)()
+local function AVQOAIF_fake_script() -- Frame_5.Script 
+	local script = Instance.new('Script', Frame_5)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		print("Clicked")
+	print("Anti AFK loaded")
+		-- Anti AFK
+		repeat wait() until game:IsLoaded() 
+		game:GetService("Players").LocalPlayer.Idled:connect(function()
+			game:GetService("VirtualUser"):ClickButton2(Vector2.new())
+		end)
+end
+coroutine.wrap(AVQOAIF_fake_script)()
+local function ISGNDFP_fake_script() -- MainFrame.LocalScript 
+	local script = Instance.new('LocalScript', MainFrame)
+
+	local frame = script.Parent.MainFrame
+	
+	frame.Draggable = true
+	frame.Active = true
+	frame.Selectable = true
+end
+coroutine.wrap(ISGNDFP_fake_script)()
+local function VMPIKW_fake_script() -- MainFrame.Script 
+	local script = Instance.new('Script', MainFrame)
+
+	print("Loaded GUI. Pls activate a gui (Click a green button)")
+	wait(10)
+	print("Seccussfully loaded.")
+	
+end
+coroutine.wrap(VMPIKW_fake_script)()
