@@ -1,0 +1,4 @@
+_G.bruh = true
+while _G.bruh do
+   wait(.4)
+   game:GetService("ReplicatedStorage").Remotes.LiftWeight:FireServer()
