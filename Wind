@@ -1,6 +1,4 @@
-print("Loaded GUI. Pls activate a gui (Click a green button)")
-wait(10)
-print("Seccussfully loaded.")
+print("Loading Flakhub...")
 
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
